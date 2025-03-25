@@ -1,10 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>saltty</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wii U Home Screen</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('wiiu-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .home-screen {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .app {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .status-bar {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+        .quick-start {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>hi</h1>
-    <p>hi</p>
+    <div class="status-bar">Time | Battery | Profile</div>
+    <div class="home-screen">
+        <div class="app">Game 1</div>
+        <div class="app">Game 2</div>
+        <div class="app">Game 3</div>
+        <div class="app">Game 4</div>
+        <div class="app">Game 5</div>
+        <div class="app">Game 6</div>
+        <div class="app">Game 7</div>
+        <div class="app">Game 8</div>
+    </div>
+    <div class="quick-start">Quick Start Menu</div>
 </body>
 </html>
